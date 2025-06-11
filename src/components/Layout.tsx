@@ -15,6 +15,10 @@ const Layout: React.FC<LayoutProps> = ({
     label: 'Dashboard',
     icon: <HomeIcon size={20} />
   }, {
+    id: 'plantrader',
+    label: 'Plan Trader',
+    icon: <BarChart2Icon size={20} />
+  }, {
     id: 'tradelog',
     label: 'Trade Log',
     icon: <BarChart2Icon size={20} />

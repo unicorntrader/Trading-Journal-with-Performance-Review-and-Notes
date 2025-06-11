@@ -17,3 +17,17 @@ export interface Note {
   date: string;
   tradeIds?: string[];
 }
+export type TradePlanStatus = 'Planned' | 'Executed' | 'Cancelled';
+export interface TradePlan {
+  id: string;
+  symbol: string;
+  entryPrice: number;
+  targetPrice: number;
+  stopLoss: number;
+  riskRewardRatio: number;
+  strategy: string;
+  notes?: string;
+  status: TradePlanStatus;
+  date: string;
+  quantity?: number;
+}
